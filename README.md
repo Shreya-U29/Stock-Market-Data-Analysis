@@ -1,104 +1,171 @@
-# 📈 Stock Market Data Analysis – Python Project
+# 📈 Stock Market Data Analysis & Dashboard – Python Project
 
 ## 📌 Project Overview
 
-This project analyzes **historical stock market data** to understand trends in stock prices, trading volumes, and market behavior over time. The goal is to explore how stock prices move, identify patterns in market performance, and visualize key financial indicators.
+This project analyzes **historical stock market data of major technology companies** to understand price trends, market behavior, and stock correlations. The project combines **Exploratory Data Analysis (EDA)** with an **interactive Streamlit dashboard** to visualize stock performance and technical indicators.
 
-Using **Python and data analysis libraries**, the project performs exploratory data analysis (EDA) to uncover insights about stock price movements and market trends.
+The analysis focuses on major technology companies such as:
 
----
+* Apple (AAPL)
+* Amazon (AMZN)
+* Google (GOOG)
+* Microsoft (MSFT)
 
-## 📊 Data Source
-
-The dataset contains **historical stock price data** including daily market information.
-
-### Key Columns
-
-* `Date` – Trading date
-* `Open` – Opening stock price
-* `High` – Highest price of the day
-* `Low` – Lowest price of the day
-* `Close` – Closing stock price
-* `Adj Close` – Adjusted closing price
-* `Volume` – Number of shares traded
-
-These attributes help analyze **price fluctuations, volatility, and trading activity** in the stock market.
+The goal is to identify **stock price trends, daily returns, moving averages, and correlations between major tech stocks**.
 
 ---
 
-## 🛠 Tools & Libraries Used
+# 📊 Data Source
+
+The dataset consists of **historical stock market data for S&P 500 technology companies**, including daily trading information.
+
+### Key Features in the Dataset
+
+* `date` – Trading date
+* `open` – Opening stock price
+* `high` – Highest price during the day
+* `low` – Lowest price during the day
+* `close` – Closing stock price
+* `volume` – Number of shares traded
+* `Name` – Company name
+
+Each company dataset contains **5 years of historical stock market data**.
+
+---
+
+# 🛠 Tools & Technologies Used
+
+### Programming
 
 * **Python**
-* **Pandas** – Data manipulation and analysis
-* **NumPy** – Numerical computations
-* **Matplotlib** – Data visualization
-* **Seaborn** – Statistical visualizations
+
+### Data Analysis
+
+* **Pandas**
+* **NumPy**
+
+### Visualization
+
+* **Matplotlib**
+* **Seaborn**
+* **Plotly**
+
+### Dashboard Development
+
+* **Streamlit**
 
 ---
 
-## 🔍 Analysis Performed
+# 🔍 Analysis Performed
 
-### 1️⃣ Stock Price Trend Analysis
+## 1️⃣ Stock Price Trend Analysis
 
-* Visualized stock price movements over time
-* Analyzed daily closing prices to observe market trends
-* Identified periods of price growth and decline
+Analyzed **closing price trends over time** to observe how stock prices evolved across different years.
 
----
+Key insights:
 
-### 2️⃣ Price Distribution Analysis
-
-* Explored distribution of stock prices
-* Analyzed variability in opening and closing prices
+* Identified long-term growth patterns in major tech companies
+* Observed periods of rapid price growth and decline
 
 ---
 
-### 3️⃣ Trading Volume Analysis
+## 2️⃣ Moving Average Analysis (Technical Indicator)
 
-* Examined trading volume patterns
-* Identified periods of high market activity
+Calculated **moving averages** to smooth price fluctuations and identify trends.
 
----
+Moving averages used:
 
-### 4️⃣ Price Relationship Analysis
+* **10-day Moving Average**
+* **20-day Moving Average**
+* **50-day Moving Average**
 
-* Compared relationships between:
+Purpose:
 
-  * Open price
-  * High price
-  * Low price
-  * Close price
-* Used visualizations to identify correlations between price metrics
+* Detect short-term and long-term trends
+* Identify potential bullish or bearish patterns
 
 ---
 
-### 5️⃣ Market Volatility Insights
+## 3️⃣ Daily Return Analysis
 
-* Observed daily price fluctuations
-* Identified patterns in stock market volatility
+Calculated **daily percentage returns** using:
+
+```
+Daily Return = Percentage change in closing price
+```
+
+This helps measure:
+
+* Day-to-day stock volatility
+* Market risk and fluctuation patterns
 
 ---
 
-## 📈 Key Insights
+## 4️⃣ Time-based Resampling Analysis
 
-* Stock prices exhibit fluctuations influenced by market conditions.
-* Trading volume spikes often correspond with large price movements.
-* High and low prices show strong correlation with opening and closing prices.
-* Visual trend analysis helps identify bullish and bearish periods.
+Stock prices were **resampled to different time frequencies**:
+
+* Monthly
+* Quarterly
+* Yearly
+
+This helps observe **long-term stock performance trends** and reduce daily noise.
 
 ---
 
-## 🚀 Skills Demonstrated
+## 5️⃣ Multi-Stock Correlation Analysis
 
+Compared stock performance across companies using a **correlation heatmap**.
+
+Companies compared:
+
+* Apple
+* Amazon
+* Google
+* Microsoft
+
+The correlation matrix helps identify:
+
+* Stocks that move together
+* Market relationships between major tech companies
+
+---
+
+# 📊 Interactive Stock Dashboard
+
+An **interactive Streamlit dashboard** was built to allow users to explore stock data dynamically.
+
+### Dashboard Features
+
+✔ Select different companies from sidebar
+✔ Visualize stock price trends
+✔ View moving averages
+✔ Analyze daily returns
+✔ Switch between monthly / quarterly / yearly price trends
+✔ Compare stock correlations
+
+---
+
+# 📈 Key Insights
+
+* Major tech stocks show strong long-term growth trends.
+* Moving averages help smooth short-term volatility.
+* Daily returns highlight periods of market instability.
+* Some tech stocks show **strong correlation**, indicating similar market behavior.
+
+---
+
+# 🚀 Skills Demonstrated
+
+* Financial Data Analysis
 * Exploratory Data Analysis (EDA)
-* Financial data analysis
-* Data visualization
-* Trend analysis
-* Python-based data analytics
+* Technical Indicator Analysis
+* Data Visualization
+* Interactive Dashboard Development
+* Python for Financial Analytics
 
 ---
 
-## 🎯 Project Outcome
+# 🎯 Project Outcome
 
-This project demonstrates how **Python can be used to analyze financial market data and identify meaningful patterns in stock price movements**. The analysis highlights the importance of **data visualization and statistical exploration** in understanding market trends.
-
+This project demonstrates how **Python can be used to analyze financial market data and build interactive dashboards for stock analysis**. By combining **data analysis with visualization and dashboards**, the project provides insights into stock price behavior, volatility, and relationships between major tech companies.
